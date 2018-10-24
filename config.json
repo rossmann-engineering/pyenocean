@@ -1,0 +1,40 @@
+{
+  "serialPort": "COM3",
+  "baudrate": 57600,
+  "devices": [
+		{
+          "id": "050c4c4e",
+          "eep": "A5-04-01",
+          "name": "Temperature"
+        }, {
+          "id": "0030E4A3",
+          "eep": "F6-02-01",
+          "name": "Rocker"
+        }, {
+          "id": "050a3158",
+          "eep": "D2-01-0E",
+          "name": "Smart Plug"
+        }, {
+          "id": "05115c58",
+          "eep": "D5-00-01",
+          "name": "Desk-Window"
+        },{
+          "id": "05115c4f",
+          "eep": "D5-00-01",
+          "name": "Workbench-Window"
+        },{
+          "id": "05115c56",
+          "eep": "D5-00-01",
+          "name": "Kitchen-Window"
+        },{
+          "id": "050988F7",
+          "eep": "A5-07-03",
+          "name": "Motion detector"
+        },{
+          "id": "01a8c6a6",
+          "eep": "A5-30-03",
+          "name": "Smoke Detector"
+        }
+
+    ]
+}

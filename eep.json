@@ -1,0 +1,2458 @@
+{
+	"version": "2.6.7",
+	"versiondate": "20.05.2018",
+	"profiles": [
+		{
+			"rorg": 246,
+			"func": 2,
+			"type": 1,
+			"statusT21": 1,
+			"statusNU": 1,
+			"datafield": [
+				{
+					"offset": 0,
+					"size": 3,
+					"data": "Rocker 1st action",
+					"shortcut": "R1",
+					"enum": [
+						"Button AI",
+						"Button A0",
+						"Button BI",
+						"Button B0"
+					]
+				},
+				{
+					"offset": 3,
+					"size": 1,
+					"data": "Energy Bow",
+					"shortcut": "EB",
+					"enum": [
+						"released",
+						"pressed"
+					]
+				},
+				{
+					"offset": 4,
+					"size": 3,
+					"data": "Rocker 2nd action",
+					"shortcut": "R2",
+					"enum": [
+						"Button AI",
+						"Button A0",
+						"Button BI",
+						"Button B0"
+					]
+				},
+				{
+					"offset": 7,
+					"size": 1,
+					"data": "2nd Action",
+					"shortcut": "SA",
+					"enum": [
+						"no 2nd action",
+						"2nd action valid"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 246,
+			"func": 2,
+			"type": 1,
+			"statusT21": 1,
+			"statusNU": 0,
+			"datafield": [
+				{
+					"offset": 0,
+					"size": 3,
+					"data": "Number of buttons pressed simultanously",
+					"shortcut": "R1",
+					"enum": [
+						"no button",
+						null,
+						null,
+						"3 or 4 buttons"
+					]
+				},
+				{
+					"offset": 3,
+					"size": 1,
+					"data": "Energy Bow",
+					"shortcut": "EB",
+					"enum": [
+						"released",
+						"pressed"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 246,
+			"func": 2,
+			"type": 2,
+			"statusT21": 1,
+			"statusNU": 1,
+			"datafield": [
+				{
+					"offset": 0,
+					"size": 3,
+					"data": "Rocker 1st action",
+					"shortcut": "R1",
+					"enum": [
+						"Button AI",
+						"Button A0",
+						"Button BI",
+						"Button B0"
+					]
+				},
+				{
+					"offset": 3,
+					"size": 1,
+					"data": "Energy Bow",
+					"shortcut": "EB",
+					"enum": [
+						"released",
+						"pressed"
+					]
+				},
+				{
+					"offset": 4,
+					"size": 3,
+					"data": "Rocker 2nd action",
+					"shortcut": "R2",
+					"enum": [
+						"Button AI",
+						"Button A0",
+						"Button BI",
+						"Button B0"
+					]
+				},
+				{
+					"offset": 7,
+					"size": 1,
+					"data": "2nd Action",
+					"shortcut": "SA",
+					"enum": [
+						"no 2nd action",
+						"2nd action valid"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 246,
+			"func": 2,
+			"type": 2,
+			"statusT21": 1,
+			"statusNU": 0,
+			"datafield": [
+				{
+					"offset": 0,
+					"size": 3,
+					"data": "Number of buttons pressed simultanously",
+					"shortcut": "R1",
+					"enum": [
+						"no button",
+						null,
+						null,
+						"3 or 4 buttons"
+					]
+				},
+				{
+					"offset": 3,
+					"size": 1,
+					"data": "Energy Bow",
+					"shortcut": "EB",
+					"enum": [
+						"released",
+						"pressed"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 246,
+			"func": 2,
+			"type": 3,
+			"statusT21": 1,
+			"statusNU": 1,
+			"datafield": [
+				{
+					"offset": 0,
+					"size": 8,
+					"data": "Rocker action",
+					"shortcut": "RA",
+					"enumvalues": [
+						48,
+						16,
+						112,
+						80
+					],
+					"enum": [
+						"Button A0",
+						"Button A1",
+						"Button B0",
+						"Button B1"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 246,
+			"func": 2,
+			"type": 4,
+			"statusT21": 1,
+			"statusNU": 1,
+			"datafield": [
+				{
+					"offset": 0,
+					"size": 1,
+					"data": "Energy Bow",
+					"shortcut": "EBO",
+					"description": "State of the enrgy bow",
+					"enum": [
+						"pressed",
+						"released"
+					]
+				},
+				{
+					"offset": 1,
+					"size": 1,
+					"data": "Button coding",
+					"shortcut": "BC",
+					"description": "Signalize button coding",
+					"enum": [
+						"button"
+					]
+				},
+				{
+					"offset": 4,
+					"size": 1,
+					"data": "BI",
+					"shortcut": "RBI",
+					"description": "State I of the rocker B",
+					"enum": [
+						"not pressed",
+						"pressed"
+					]
+				},
+				{
+					"offset": 5,
+					"size": 1,
+					"data": "B0",
+					"shortcut": "RB0",
+					"description": "State 0 of the rocker B",
+					"enum": [
+						"not pressed",
+						"pressed"
+					]
+				},
+				{
+					"offset": 6,
+					"size": 1,
+					"data": "AI",
+					"shortcut": "RAI",
+					"description": "State I of the rocker A",
+					"enum": [
+						"not pressed",
+						"pressed"
+					]
+				},
+				{
+					"offset": 7,
+					"size": 1,
+					"data": "A0",
+					"shortcut": "RA0",
+					"description": "State 0 of the rocker A",
+					"enum": [
+						"not pressed",
+						"pressed"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 246,
+			"func": 3,
+			"type": 1,
+			"statusT21": 0,
+			"statusNU": 1,
+			"datafield": [
+				{
+					"offset": 0,
+					"size": 3,
+					"data": "Rocker 1st action",
+					"shortcut": "R1",
+					"enum": [
+						"Button AI",
+						"Button A0",
+						"Button BI",
+						"Button B0",
+						"Button CI",
+						"Button C0",
+						"Button DI",
+						"Button D0"
+					]
+				},
+				{
+					"offset": 3,
+					"size": 1,
+					"data": "Energy Bow",
+					"shortcut": "EB",
+					"enum": [
+						"released",
+						"pressed"
+					]
+				},
+				{
+					"offset": 4,
+					"size": 3,
+					"data": "Rocker 2nd action",
+					"shortcut": "R2",
+					"enum": [
+						"Button AI",
+						"Button A0",
+						"Button BI",
+						"Button B0",
+						"Button CI",
+						"Button C0",
+						"Button DI",
+						"Button D0"
+					]
+				},
+				{
+					"offset": 7,
+					"size": 1,
+					"data": "2nd Action",
+					"shortcut": "SA",
+					"enum": [
+						"no 2nd action",
+						"2nd action valid"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 246,
+			"func": 3,
+			"type": 1,
+			"statusT21": 0,
+			"statusNU": 0,
+			"datafield": [
+				{
+					"offset": 0,
+					"size": 3,
+					"data": "Number of buttons pressed simultanously",
+					"shortcut": "R1",
+					"enum": [
+						"no button",
+						"2 buttons",
+						"3 buttons",
+						"4 buttons",
+						"5 buttons",
+						"6 buttons",
+						"7 buttons",
+						"8 buttons"
+					]
+				},
+				{
+					"offset": 3,
+					"size": 1,
+					"data": "Energy Bow",
+					"shortcut": "EB",
+					"enum": [
+						"released",
+						"pressed"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 246,
+			"func": 3,
+			"type": 2,
+			"statusT21": 0,
+			"statusNU": 1,
+			"datafield": [
+				{
+					"offset": 0,
+					"size": 3,
+					"data": "Rocker 1st action",
+					"shortcut": "R1",
+					"enum": [
+						"Button AI",
+						"Button A0",
+						"Button BI",
+						"Button B0",
+						"Button CI",
+						"Button C0",
+						"Button DI",
+						"Button D0"
+					]
+				},
+				{
+					"offset": 3,
+					"size": 1,
+					"data": "Energy Bow",
+					"shortcut": "EB",
+					"enum": [
+						"released",
+						"pressed"
+					]
+				},
+				{
+					"offset": 4,
+					"size": 3,
+					"data": "Rocker 2nd action",
+					"shortcut": "R2",
+					"enum": [
+						"Button AI",
+						"Button A0",
+						"Button BI",
+						"Button B0",
+						"Button CI",
+						"Button C0",
+						"Button DI",
+						"Button D0"
+					]
+				},
+				{
+					"offset": 7,
+					"size": 1,
+					"data": "2nd Action",
+					"shortcut": "SA",
+					"enum": [
+						"no 2nd action",
+						"2nd action valid"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 246,
+			"func": 3,
+			"type": 1,
+			"statusT21": 1,
+			"statusNU": 1,
+			"datafield": [
+				{
+					"offset": 0,
+					"size": 3,
+					"data": "Number of buttons pressed simultanously",
+					"shortcut": "R1",
+					"enum": [
+						"no button",
+						"2 buttons",
+						"3 buttons",
+						"4 buttons",
+						"5 buttons",
+						"6 buttons",
+						"7 buttons",
+						"8 buttons"
+					]
+				},
+				{
+					"offset": 3,
+					"size": 1,
+					"data": "Energy Bow",
+					"shortcut": "EB",
+					"enum": [
+						"released",
+						"pressed"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 246,
+			"func": 4,
+			"type": 1,
+			"statusT21": 1,
+			"statusNU": 1,
+			"datafield": [
+				{
+					"offset": 0,
+					"size": 8,
+					"data": "Key Card",
+					"shortcut": "KC",
+					"enumvalues": [
+						112
+					],
+					"enum": [
+						"112: inserted"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 246,
+			"func": 4,
+			"type": 1,
+			"statusT21": 1,
+			"statusNU": 0,
+			"datafield": [
+				{
+					"offset": 0,
+					"size": 8,
+					"data": "Key Card",
+					"shortcut": "KC",
+					"enumvalues": [
+						0
+					],
+					"enum": [
+						"0: taken out"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 246,
+			"func": 4,
+			"type": 2,
+			"datafield": [
+				{
+					"offset": 0,
+					"size": 1,
+					"data": "Energy Bow",
+					"shortcut": "EB",
+					"description": "State of the energy bow",
+					"enum": [
+						"taken out",
+						"card inserted"
+					]
+				},
+				{
+					"offset": 1,
+					"size": 1,
+					"data": "Button coding",
+					"shortcut": "BC",
+					"description": "Signlize button coding",
+					"enum": [
+						"button"
+					]
+				},
+				{
+					"offset": 5,
+					"size": 1,
+					"data": "State of card",
+					"shortcut": "SOC",
+					"description": "State of the card",
+					"enum": [
+						"taken out",
+						"card inserted"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 246,
+			"func": 5,
+			"type": 1,
+			"statusT21": 1,
+			"statusNU": 1,
+			"datafield": [
+				{
+					"offset": 0,
+					"size": 8,
+					"data": "Water sensor",
+					"shortcut": "WAS",
+					"description": "Alert signal that the sensor detected water leakage",
+					"enumvalues": [
+						17
+					],
+					"enum": [
+						"Water detected"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 246,
+			"func": 10,
+			"type": 0,
+			"statusT21": 1,
+			"statusNU": 0,
+			"datafield": [
+				{
+					"offset": 0,
+					"size": 8,
+					"data": "Windows handle",
+					"shortcut": "WIN",
+					"description": "Movement of the window handle",
+					"enumvalues": [
+						"0b11X0XXXX",
+						"0b1111XXXX",
+						"0b11X0XXXX",
+						"0b1101XXXX",
+						"0b11X0XXXX",
+						"0b11110000",
+						"0b11X0XXXX",
+						"0b1101XXXX"
+					],
+					"enum": [
+						"Moved from up to left",
+						"Moved from right to down",
+						"Moved from down to left",
+						"Moved from left to up",
+						"Moved from up to left",
+						"Moved from left to down",
+						"Moved from down to right",
+						"Moved from right ot up"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 246,
+			"func": 10,
+			"type": 1,
+			"datafield": [
+				{
+					"offset": 1,
+					"size": 1,
+					"data": "Handle coding",
+					"shortcut": "HC",
+					"description": "Signlize windows handle coding",
+					"enum": [
+						null,
+						"handle"
+					]
+				},
+				{
+					"offset": 4,
+					"size": 4,
+					"data": "Handle value",
+					"shortcut": "HVL",
+					"description": "Value of the 4MSB of the Data field of ERP1 coding",
+					"enumvalues": [
+						"0b11X0",
+						"0b1111",
+						"0b11X0",
+						"0b1101",
+						"0b11X0",
+						"0b1111",
+						"0b11X0",
+						"0b1101"
+					],
+					"enum": [
+						"Moved from up to left",
+						"Moved from right to down",
+						"Moved from down to left",
+						"Moved from left to up",
+						"Moved from up to left",
+						"Moved from left to down",
+						"Moved from down to right",
+						"Moved from right ot up"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 213,
+			"func": 0,
+			"type": 1,
+			"datafield": [
+				{
+					"offset": 4,
+					"size": 1,
+					"data": "Learn Button",
+					"shortcut": "LRN",
+					"enum": [
+						"pressed",
+						"not pressed"
+					]
+				},
+				{
+					"offset": 7,
+					"size": 1,
+					"data": "Contact",
+					"shortcut": "CO",
+					"enum": [
+						"open",
+						"closed"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 0,
+			"type": 1,
+			"datafield": [
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				},
+				{
+					"offset": 7,
+					"size": 1,
+					"data": "Contact",
+					"shortcut": "CO",
+					"enum": [
+						"open",
+						"closed"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 2,
+			"type": 1,
+			"datafield": [
+				{
+					"offset": 16,
+					"size": 8,
+					"data": "Temperature",
+					"shortcut": "TMP",
+					"description": "Temperature (linear)",
+					"validRangeMin": 255,
+					"validRangeMax": 0,
+					"scaleMin": -40,
+					"scaleMax": 0,
+					"unit": "°C"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 2,
+			"type": 2,
+			"datafield": [
+				{
+					"offset": 16,
+					"size": 8,
+					"data": "Temperature",
+					"shortcut": "TMP",
+					"description": "Temperature (linear)",
+					"validRangeMin": 255,
+					"validRangeMax": 0,
+					"scaleMin": -30,
+					"scaleMax": 10,
+					"unit": "°C"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 2,
+			"type": 3,
+			"datafield": [
+				{
+					"offset": 16,
+					"size": 8,
+					"data": "Temperature",
+					"shortcut": "TMP",
+					"description": "Temperature (linear)",
+					"validRangeMin": 255,
+					"validRangeMax": 0,
+					"scaleMin": -20,
+					"scaleMax": 20,
+					"unit": "°C"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 2,
+			"type": 4,
+			"datafield": [
+				{
+					"offset": 16,
+					"size": 8,
+					"data": "Temperature",
+					"shortcut": "TMP",
+					"description": "Temperature (linear)",
+					"validRangeMin": 255,
+					"validRangeMax": 0,
+					"scaleMin": -10,
+					"scaleMax": 30,
+					"unit": "°C"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 2,
+			"type": 5,
+			"datafield": [
+				{
+					"offset": 16,
+					"size": 8,
+					"data": "Temperature",
+					"shortcut": "TMP",
+					"description": "Temperature (linear)",
+					"validRangeMin": 255,
+					"validRangeMax": 0,
+					"scaleMin": 0,
+					"scaleMax": 40,
+					"unit": "°C"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 2,
+			"type": 6,
+			"datafield": [
+				{
+					"offset": 16,
+					"size": 8,
+					"data": "Temperature",
+					"shortcut": "TMP",
+					"description": "Temperature (linear)",
+					"validRangeMin": 255,
+					"validRangeMax": 0,
+					"scaleMin": 10,
+					"scaleMax": 50,
+					"unit": "°C"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 2,
+			"type": 4,
+			"datafield": [
+				{
+					"offset": 16,
+					"size": 8,
+					"data": "Temperature",
+					"shortcut": "TMP",
+					"description": "Temperature (linear)",
+					"validRangeMin": 255,
+					"validRangeMax": 0,
+					"scaleMin": 20,
+					"scaleMax": 60,
+					"unit": "°C"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 2,
+			"type": 8,
+			"datafield": [
+				{
+					"offset": 16,
+					"size": 8,
+					"data": "Temperature",
+					"shortcut": "TMP",
+					"description": "Temperature (linear)",
+					"validRangeMin": 255,
+					"validRangeMax": 0,
+					"scaleMin": 30,
+					"scaleMax": 70,
+					"unit": "°C"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 2,
+			"type": 9,
+			"datafield": [
+				{
+					"offset": 16,
+					"size": 8,
+					"data": "Temperature",
+					"shortcut": "TMP",
+					"description": "Temperature (linear)",
+					"validRangeMin": 255,
+					"validRangeMax": 0,
+					"scaleMin": 40,
+					"scaleMax": 80,
+					"unit": "°C"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 2,
+			"type": 10,
+			"datafield": [
+				{
+					"offset": 16,
+					"size": 8,
+					"data": "Temperature",
+					"shortcut": "TMP",
+					"description": "Temperature (linear)",
+					"validRangeMin": 255,
+					"validRangeMax": 0,
+					"scaleMin": 50,
+					"scaleMax": 90,
+					"unit": "°C"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 2,
+			"type": 11,
+			"datafield": [
+				{
+					"offset": 16,
+					"size": 8,
+					"data": "Temperature",
+					"shortcut": "TMP",
+					"description": "Temperature (linear)",
+					"validRangeMin": 255,
+					"validRangeMax": 0,
+					"scaleMin": 60,
+					"scaleMax": 100,
+					"unit": "°C"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 2,
+			"type": 16,
+			"datafield": [
+				{
+					"offset": 16,
+					"size": 8,
+					"data": "Temperature",
+					"shortcut": "TMP",
+					"description": "Temperature (linear)",
+					"validRangeMin": 255,
+					"validRangeMax": 0,
+					"scaleMin": -60,
+					"scaleMax": 20,
+					"unit": "°C"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 2,
+			"type": 17,
+			"datafield": [
+				{
+					"offset": 16,
+					"size": 8,
+					"data": "Temperature",
+					"shortcut": "TMP",
+					"description": "Temperature (linear)",
+					"validRangeMin": 255,
+					"validRangeMax": 0,
+					"scaleMin": -50,
+					"scaleMax": 30,
+					"unit": "°C"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 2,
+			"type": 18,
+			"datafield": [
+				{
+					"offset": 16,
+					"size": 8,
+					"data": "Temperature",
+					"shortcut": "TMP",
+					"description": "Temperature (linear)",
+					"validRangeMin": 255,
+					"validRangeMax": 0,
+					"scaleMin": -40,
+					"scaleMax": 40,
+					"unit": "°C"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 2,
+			"type": 19,
+			"datafield": [
+				{
+					"offset": 16,
+					"size": 8,
+					"data": "Temperature",
+					"shortcut": "TMP",
+					"description": "Temperature (linear)",
+					"validRangeMin": 255,
+					"validRangeMax": 0,
+					"scaleMin": -30,
+					"scaleMax": 50,
+					"unit": "°C"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 2,
+			"type": 20,
+			"datafield": [
+				{
+					"offset": 16,
+					"size": 8,
+					"data": "Temperature",
+					"shortcut": "TMP",
+					"description": "Temperature (linear)",
+					"validRangeMin": 255,
+					"validRangeMax": 0,
+					"scaleMin": -20,
+					"scaleMax": 60,
+					"unit": "°C"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 2,
+			"type": 21,
+			"datafield": [
+				{
+					"offset": 16,
+					"size": 8,
+					"data": "Temperature",
+					"shortcut": "TMP",
+					"description": "Temperature (linear)",
+					"validRangeMin": 255,
+					"validRangeMax": 0,
+					"scaleMin": -10,
+					"scaleMax": 70,
+					"unit": "°C"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 2,
+			"type": 22,
+			"datafield": [
+				{
+					"offset": 16,
+					"size": 8,
+					"data": "Temperature",
+					"shortcut": "TMP",
+					"description": "Temperature (linear)",
+					"validRangeMin": 255,
+					"validRangeMax": 0,
+					"scaleMin": 0,
+					"scaleMax": 80,
+					"unit": "°C"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 2,
+			"type": 23,
+			"datafield": [
+				{
+					"offset": 16,
+					"size": 8,
+					"data": "Temperature",
+					"shortcut": "TMP",
+					"description": "Temperature (linear)",
+					"validRangeMin": 255,
+					"validRangeMax": 0,
+					"scaleMin": 10,
+					"scaleMax": 90,
+					"unit": "°C"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 2,
+			"type": 24,
+			"datafield": [
+				{
+					"offset": 16,
+					"size": 8,
+					"data": "Temperature",
+					"shortcut": "TMP",
+					"description": "Temperature (linear)",
+					"validRangeMin": 255,
+					"validRangeMax": 0,
+					"scaleMin": 20,
+					"scaleMax": 100,
+					"unit": "°C"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 2,
+			"type": 25,
+			"datafield": [
+				{
+					"offset": 16,
+					"size": 8,
+					"data": "Temperature",
+					"shortcut": "TMP",
+					"description": "Temperature (linear)",
+					"validRangeMin": 255,
+					"validRangeMax": 0,
+					"scaleMin": 30,
+					"scaleMax": 110,
+					"unit": "°C"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 2,
+			"type": 26,
+			"datafield": [
+				{
+					"offset": 16,
+					"size": 8,
+					"data": "Temperature",
+					"shortcut": "TMP",
+					"description": "Temperature (linear)",
+					"validRangeMin": 255,
+					"validRangeMax": 0,
+					"scaleMin": 40,
+					"scaleMax": 120,
+					"unit": "°C"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 2,
+			"type": 27,
+			"datafield": [
+				{
+					"offset": 16,
+					"size": 8,
+					"data": "Temperature",
+					"shortcut": "TMP",
+					"description": "Temperature (linear)",
+					"validRangeMin": 255,
+					"validRangeMax": 0,
+					"scaleMin": 50,
+					"scaleMax": 130,
+					"unit": "°C"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 2,
+			"type": 32,
+			"datafield": [
+				{
+					"offset": 14,
+					"size": 10,
+					"data": "Temperature",
+					"shortcut": "TMP",
+					"description": "Temperature (linear)",
+					"validRangeMin": 1023,
+					"validRangeMax": 0,
+					"scaleMin": -10,
+					"scaleMax": 41.2,
+					"unit": "°C"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 2,
+			"type": 48,
+			"datafield": [
+				{
+					"offset": 14,
+					"size": 10,
+					"data": "Temperature",
+					"shortcut": "TMP",
+					"description": "Temperature (linear)",
+					"validRangeMin": 1023,
+					"validRangeMax": 0,
+					"scaleMin": -40,
+					"scaleMax": 62.3,
+					"unit": "°C"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 4,
+			"type": 1,
+			"datafield": [
+				{
+					"offset": 8,
+					"size": 8,
+					"data": "Humidity",
+					"shortcut": "HUM",
+					"description": "Rel. Humidity (linear)",
+					"validRangeMin": 0,
+					"validRangeMax": 250,
+					"scaleMin": 0,
+					"scaleMax": 100,
+					"unit": "%"
+				},
+				{
+					"offset": 16,
+					"size": 8,
+					"data": "Temperature",
+					"shortcut": "TMP",
+					"description": "Temperature (linear)",
+					"validRangeMin": 0,
+					"validRangeMax": 250,
+					"scaleMin": 0,
+					"scaleMax": 40,
+					"unit": "°C"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				},
+				{
+					"offset": 30,
+					"size": 1,
+					"data": "T-Sensor",
+					"shortcut": "TSN",
+					"description": "Availability of the Temperature Sensor",
+					"enum": [
+						"not available",
+						"available"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 4,
+			"type": 2,
+			"datafield": [
+				{
+					"offset": 8,
+					"size": 8,
+					"data": "Humidity",
+					"shortcut": "HUM",
+					"description": "Rel. Humidity (linear)",
+					"validRangeMin": 0,
+					"validRangeMax": 250,
+					"scaleMin": 0,
+					"scaleMax": 100,
+					"unit": "%"
+				},
+				{
+					"offset": 16,
+					"size": 8,
+					"data": "Temperature",
+					"shortcut": "TMP",
+					"description": "Temperature (linear)",
+					"validRangeMin": 0,
+					"validRangeMax": 250,
+					"scaleMin": -20,
+					"scaleMax": 60,
+					"unit": "°C"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				},
+				{
+					"offset": 30,
+					"size": 1,
+					"data": "T-Sensor",
+					"shortcut": "TSN",
+					"description": "Availability of the Temperature Sensor",
+					"enum": [
+						"not available",
+						"available"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 4,
+			"type": 3,
+			"datafield": [
+				{
+					"offset": 0,
+					"size": 8,
+					"data": "Humidity",
+					"shortcut": "HUM",
+					"description": "Rel. Humidity (linear)",
+					"validRangeMin": 0,
+					"validRangeMax": 255,
+					"scaleMin": 0,
+					"scaleMax": 100,
+					"unit": "%"
+				},
+				{
+					"offset": 14,
+					"size": 10,
+					"data": "Temperature",
+					"shortcut": "TMP",
+					"description": "Temperature (linear)",
+					"validRangeMin": 0,
+					"validRangeMax": 1023,
+					"scaleMin": -20,
+					"scaleMax": 60,
+					"unit": "°C"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				},
+				{
+					"offset": 31,
+					"size": 1,
+					"data": "Telegram Type",
+					"shortcut": "TTP",
+					"description": "Telegram Type",
+					"enum": [
+						"Heartbeat",
+						"Event triggered"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 5,
+			"type": 1,
+			"datafield": [
+				{
+					"offset": 6,
+					"size": 10,
+					"data": "Barometer",
+					"shortcut": "BAR",
+					"description": "Barometer (linear)",
+					"validRangeMin": 0,
+					"validRangeMax": 1023,
+					"scaleMin": 500,
+					"scaleMax": 1150,
+					"unit": "hPa"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				},
+				{
+					"offset": 31,
+					"size": 1,
+					"data": "Telegram Type",
+					"shortcut": "TTP",
+					"description": "Telegram Type",
+					"enum": [
+						"Heartbeat",
+						"Event triggered"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 6,
+			"type": 1,
+			"datafield": [
+				{
+					"offset": 0,
+					"size": 8,
+					"data": "Supply voltage",
+					"shortcut": "SVC",
+					"description": "Supply voltage (linear)",
+					"validRangeMin": 0,
+					"validRangeMax": 255,
+					"scaleMin": 0,
+					"scaleMax": 5.1,
+					"unit": "V"
+				},
+				{
+					"offset": 8,
+					"size": 8,
+					"data": "Illumination",
+					"shortcut": "ILL2",
+					"description": "Illumination (linear)",
+					"validRangeMin": 0,
+					"validRangeMax": 255,
+					"scaleMin": 300,
+					"scaleMax": 30000,
+					"unit": "lx"
+				},
+				{
+					"offset": 16,
+					"size": 8,
+					"data": "Illumination",
+					"shortcut": "ILL1",
+					"description": "Illumination (linear)",
+					"validRangeMin": 0,
+					"validRangeMax": 255,
+					"scaleMin": 600,
+					"scaleMax": 60000,
+					"unit": "lx"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				},
+				{
+					"offset": 31,
+					"size": 1,
+					"data": "Range select",
+					"shortcut": "RS",
+					"description": "Range",
+					"enum": [
+						"Range acc. to DB_1 (ILL1)",
+						"Range acc. to DB_2 (ILL2)"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 6,
+			"type": 2,
+			"datafield": [
+				{
+					"offset": 0,
+					"size": 8,
+					"data": "Supply voltage",
+					"shortcut": "SVC",
+					"description": "Supply voltage (linear)",
+					"validRangeMin": 0,
+					"validRangeMax": 255,
+					"scaleMin": 0,
+					"scaleMax": 5.1,
+					"unit": "V"
+				},
+				{
+					"offset": 8,
+					"size": 8,
+					"data": "Illumination",
+					"shortcut": "ILL2",
+					"description": "Illumination (linear)",
+					"validRangeMin": 0,
+					"validRangeMax": 255,
+					"scaleMin": 0,
+					"scaleMax": 510,
+					"unit": "lx"
+				},
+				{
+					"offset": 16,
+					"size": 8,
+					"data": "Illumination",
+					"shortcut": "ILL1",
+					"description": "Illumination (linear)",
+					"validRangeMin": 0,
+					"validRangeMax": 255,
+					"scaleMin": 0,
+					"scaleMax": 1020,
+					"unit": "lx"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				},
+				{
+					"offset": 31,
+					"size": 1,
+					"data": "Range select",
+					"shortcut": "RS",
+					"description": "Range",
+					"enum": [
+						"Range acc. to DB_1 (ILL1)",
+						"Range acc. to DB_2 (ILL2)"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 6,
+			"type": 3,
+			"datafield": [
+				{
+					"offset": 0,
+					"size": 8,
+					"data": "Supply voltage",
+					"shortcut": "SVC",
+					"description": "Supply voltage (linear 251...255: reserved for error code",
+					"validRangeMin": 0,
+					"validRangeMax": 250,
+					"scaleMin": 0,
+					"scaleMax": 5.0,
+					"unit": "V"
+				},
+				{
+					"offset": 8,
+					"size": 10,
+					"data": "Illumination",
+					"shortcut": "ILL",
+					"description": "Illumination (linear) DB2 = 8 MSB, DB1 = 2 LSB, 1002...1024: 1001: over range, 1002...1024: reserved",
+					"validRangeMin": 0,
+					"validRangeMax": 1000,
+					"scaleMin": 0,
+					"scaleMax": 1000,
+					"unit": "lx"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 7,
+			"type": 1,
+			"datafield": [
+				{
+					"offset": 0,
+					"size": 8,
+					"data": "Supply voltage (OPTIONAL)",
+					"shortcut": "SVC",
+					"description": "Supply voltage (linear 251...255: reserved for error code",
+					"validRangeMin": 0,
+					"validRangeMax": 250,
+					"scaleMin": 0,
+					"scaleMax": 5.0,
+					"unit": "V"
+				},
+				{
+					"offset": 16,
+					"size": 8,
+					"data": "PIR Status",
+					"shortcut": "PIRS",
+					"description": "PIR Status",
+					"enumvalues": [
+						"0...127",
+						"128...255"
+					],
+					"enum": [
+						"PIR off",
+						"PIR on"
+					]
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				},
+				{
+					"offset": 31,
+					"size": 1,
+					"data": "Supply voltage availability",
+					"shortcut": "SVA",
+					"description": "Supply voltage availability at DB_3",
+					"enum": [
+						"Supply voltage is not supported",
+						"Supply voltage is supported"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 7,
+			"type": 2,
+			"datafield": [
+				{
+					"offset": 0,
+					"size": 8,
+					"data": "Supply voltage (REQUIRED)",
+					"shortcut": "SVC",
+					"description": "Supply voltage / super cap. (linear 251...255: reserved for error code",
+					"validRangeMin": 0,
+					"validRangeMax": 250,
+					"scaleMin": 0,
+					"scaleMax": 5.0,
+					"unit": "V"
+				},
+				{
+					"offset": 24,
+					"size": 1,
+					"data": "PIR Status",
+					"shortcut": "PIRS",
+					"description": "PIR Status",
+					"enum": [
+						"Uncertain of occupancy status",
+						"Motion detected"
+					]
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 7,
+			"type": 3,
+			"datafield": [
+				{
+					"offset": 0,
+					"size": 8,
+					"data": "Supply voltage (REQUIRED)",
+					"shortcut": "SVC",
+					"description": "Supply voltage (linear 251...255: reserved for error code",
+					"validRangeMin": 0,
+					"validRangeMax": 250,
+					"scaleMin": 0,
+					"scaleMax": 5.0,
+					"unit": "V"
+				},
+				{
+					"offset": 8,
+					"size": 10,
+					"data": "Illumination",
+					"shortcut": "ILL",
+					"description": "Illumination (linear) DB2 = 8 MSB, DB1 = 2 LSB, 1002...1024: 1001: over range, 1002...1024: reserved",
+					"validRangeMin": 0,
+					"validRangeMax": 1000,
+					"scaleMin": 0,
+					"scaleMax": 1000,
+					"unit": "lx"
+				},
+				{
+					"offset": 24,
+					"size": 1,
+					"data": "PIR Status",
+					"shortcut": "PIRS",
+					"description": "PIR Status",
+					"enum": [
+						"Uncertain of occupancy status",
+						"Motion detected"
+					]
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 8,
+			"type": 1,
+			"datafield": [
+				{
+					"offset": 0,
+					"size": 8,
+					"data": "Supply voltage",
+					"shortcut": "SVC",
+					"description": "Supply voltage (linear)",
+					"validRangeMin": 0,
+					"validRangeMax": 255,
+					"scaleMin": 0,
+					"scaleMax": 5.1,
+					"unit": "V"
+				},
+				{
+					"offset": 8,
+					"size": 8,
+					"data": "Illumination",
+					"shortcut": "ILL",
+					"description": "Illumination (linear)",
+					"validRangeMin": 0,
+					"validRangeMax": 255,
+					"scaleMin": 0,
+					"scaleMax": 510,
+					"unit": "lx"
+				},
+				{
+					"offset": 16,
+					"size": 8,
+					"data": "Temperature",
+					"shortcut": "TMP",
+					"description": "Temperature (linear)",
+					"validRangeMin": 0,
+					"validRangeMax": 255,
+					"scaleMin": 0,
+					"scaleMax": 51,
+					"unit": "°C"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				},
+				{
+					"offset": 30,
+					"size": 1,
+					"data": "PIR Status",
+					"shortcut": "PIRS",
+					"description": "PIR Status",
+					"enum": [
+						"PIR on",
+						"PIR off"
+					]
+				},
+				{
+					"offset": 31,
+					"size": 1,
+					"data": "Occupency Button",
+					"shortcut": "OCC",
+					"description": "PIR Status",
+					"enum": [
+						"Button pressed",
+						"Button released"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 8,
+			"type": 2,
+			"datafield": [
+				{
+					"offset": 0,
+					"size": 8,
+					"data": "Supply voltage",
+					"shortcut": "SVC",
+					"description": "Supply voltage (linear)",
+					"validRangeMin": 0,
+					"validRangeMax": 255,
+					"scaleMin": 0,
+					"scaleMax": 5.1,
+					"unit": "V"
+				},
+				{
+					"offset": 8,
+					"size": 8,
+					"data": "Illumination",
+					"shortcut": "ILL",
+					"description": "Illumination (linear)",
+					"validRangeMin": 0,
+					"validRangeMax": 255,
+					"scaleMin": 0,
+					"scaleMax": 1020,
+					"unit": "lx"
+				},
+				{
+					"offset": 16,
+					"size": 8,
+					"data": "Temperature",
+					"shortcut": "TMP",
+					"description": "Temperature (linear)",
+					"validRangeMin": 0,
+					"validRangeMax": 255,
+					"scaleMin": 0,
+					"scaleMax": 51,
+					"unit": "°C"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				},
+				{
+					"offset": 30,
+					"size": 1,
+					"data": "PIR Status",
+					"shortcut": "PIRS",
+					"description": "PIR Status",
+					"enum": [
+						"PIR on",
+						"PIR off"
+					]
+				},
+				{
+					"offset": 31,
+					"size": 1,
+					"data": "Occupency Button",
+					"shortcut": "OCC",
+					"description": "PIR Status",
+					"enum": [
+						"Button pressed",
+						"Button released"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 8,
+			"type": 3,
+			"datafield": [
+				{
+					"offset": 0,
+					"size": 8,
+					"data": "Supply voltage",
+					"shortcut": "SVC",
+					"description": "Supply voltage (linear)",
+					"validRangeMin": 0,
+					"validRangeMax": 255,
+					"scaleMin": 0,
+					"scaleMax": 5.1,
+					"unit": "V"
+				},
+				{
+					"offset": 8,
+					"size": 8,
+					"data": "Illumination",
+					"shortcut": "ILL",
+					"description": "Illumination (linear)",
+					"validRangeMin": 0,
+					"validRangeMax": 255,
+					"scaleMin": 0,
+					"scaleMax": 1530,
+					"unit": "lx"
+				},
+				{
+					"offset": 16,
+					"size": 8,
+					"data": "Temperature",
+					"shortcut": "TMP",
+					"description": "Temperature (linear)",
+					"validRangeMin": 0,
+					"validRangeMax": 255,
+					"scaleMin": -30,
+					"scaleMax": 50,
+					"unit": "°C"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				},
+				{
+					"offset": 30,
+					"size": 1,
+					"data": "PIR Status",
+					"shortcut": "PIRS",
+					"description": "PIR Status",
+					"enum": [
+						"PIR on",
+						"PIR off"
+					]
+				},
+				{
+					"offset": 31,
+					"size": 1,
+					"data": "Occupency Button",
+					"shortcut": "OCC",
+					"description": "PIR Status",
+					"enum": [
+						"Button pressed",
+						"Button released"
+					]
+				}
+			]
+		},
+		{
+			"rorg": 165,
+			"func": 9,
+			"type": 2,
+			"datafield": [
+				{
+					"offset": 0,
+					"size": 8,
+					"data": "Supply voltage",
+					"shortcut": "SVC",
+					"description": "Supply voltage (linear)",
+					"validRangeMin": 0,
+					"validRangeMax": 255,
+					"scaleMin": 0,
+					"scaleMax": 5.1,
+					"unit": "V"
+				},
+				{
+					"offset": 8,
+					"size": 8,
+					"data": "Concentration",
+					"shortcut": "Conc",
+					"description": "Gas concentration",
+					"validRangeMin": 0,
+					"validRangeMax": 255,
+					"scaleMin": 0,
+					"scaleMax": 1020,
+					"unit": "ppm"
+				},
+				{
+					"offset": 16,
+					"size": 8,
+					"data": "Temperature",
+					"shortcut": "TMP",
+					"description": "Temperature (linear)",
+					"validRangeMin": 0,
+					"validRangeMax": 255,
+					"scaleMin": 0,
+					"scaleMax": 51,
+					"unit": "°C"
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				},
+				{
+					"offset": 30,
+					"size": 1,
+					"data": "T-Sensor",
+					"shortcut": "TSN",
+					"enum": [
+						"Temperature Sensor nor available",
+						"Temperature Sensor available"
+					]
+				}
+			]
+		},{
+			"rorg": 165,
+			"func": 48,
+			"type": 3,
+			"datafield": [
+				{
+					"offset": 8,
+					"size": 8,
+					"data": "Temperature",
+					"shortcut": "TMP",
+					"description": "Temperature (linear)",
+					"validRangeMin": 0,
+					"validRangeMax": 255,
+					"scaleMin": 0,
+					"scaleMax": 40,
+					"unit": "°C"
+				},
+				{
+					"offset": 19,
+					"size": 1,
+					"data": "Status of Wake",
+					"shortcut": "WA0",
+					"description": "Value of Wake signal",
+					"enum": [
+						"Low",
+						"High"
+					]
+				},{
+					"offset": 20,
+					"size": 1,
+					"data": "Digital Input 3",
+					"shortcut": "DI3",
+					"description": "Digital Input 3",
+					"enum": [
+						"Low",
+						"High"
+					]
+				},{
+					"offset": 21,
+					"size": 1,
+					"data": "Digital Input 2",
+					"shortcut": "DI2",
+					"description": "Digital Input 2",
+					"enum": [
+						"Low",
+						"High"
+					]
+				},{
+					"offset": 22,
+					"size": 1,
+					"data": "Digital Input 1",
+					"shortcut": "DI1",
+					"description": "Digital Input 1",
+					"enum": [
+						"Low",
+						"High"
+					]
+				},{
+					"offset": 23,
+					"size": 1,
+					"data": "Digital Input 0",
+					"shortcut": "DI0",
+					"description": "Digital Input 0",
+					"enum": [
+						"Low",
+						"High"
+					]
+				},
+				{
+					"offset": 28,
+					"size": 1,
+					"data": "LRN Bit",
+					"shortcut": "LRNB",
+					"description": "LRN Bit",
+					"enum": [
+						"Teach-in telegram",
+						"Data telegram"
+					]
+				}
+			]
+		},{
+			"rorg": 210,
+			"func": 1,
+			"type": 14,
+			"datafield": [
+				{
+					"offset": 4,
+					"size": 4,
+					"data": "Command ID",
+					"shortcut": "CMD",
+					"description": "command identifier"
+				}
+			],
+			"cmd": [
+				{
+					"id": 4,
+					"description": "Actuator Status Response",
+					"datafield": [
+					{
+						"offset": 0,
+						"size": 1,
+						"data": "Power Failure",
+						"shortcut": "PF",
+						"enum": [
+						"Power Failure Detection disabled/not supported",
+						"Power Failure Detection enabled"
+						]
+					},{
+						"offset": 1,
+						"size": 1,
+						"data": "Power Failure Detection",
+						"shortcut": "PFD",
+						"enum": [
+						"Power Failure not detected/not supported/disabled",
+						"Power Failure Detected"
+						]
+					},{
+						"offset": 8,
+						"size": 1,
+						"data": "Over current switch off",
+						"shortcut": "OC",
+						"enum": [
+						"Over current switch off: ready / not supported",
+						"Over current switch off: executed"
+						]
+					},{
+						"offset": 9,
+						"size": 2,
+						"data": "Error level",
+						"shortcut": "EL",
+						"enum": [
+							"Error level 0: hardware OK",
+							"Error level 1: hardware warning",
+							"Error level 2: hardware failure",
+							"Error level not supported"
+						]
+					},{
+						"offset": 11,
+						"size": 5,
+						"data": "I/O channel",
+						"shortcut": "I/O"
+					},{
+						"offset": 16,
+						"size": 1,
+						"data": "Local control",
+						"shortcut": "LC",
+						"enum": [
+							"Local control disabled / not supported",
+							"Local control enabled"
+						]
+					},{
+						"offset": 17,
+						"size": 7,
+						"data": "Output value",
+						"shortcut": "OV"
+					}
+					]
+				}, {
+					"id": 1,
+					"description": "Actuator Set Output",
+					"datafield": [
+						{
+							"offset": 8,
+							"size": 3,
+							"data": "Dim value",
+							"shortcut": "DV",
+							"enum": [
+								"Switch to new output value",
+								"Dim to new output value - dim timer 1",
+								"Dim to new output value - dim timer 2",
+								"Dim to new output value - dim timer 3",
+								"Stop dimming"
+							]
+						},{
+							"offset": 11,
+							"size": 5,
+							"data": "I/O channel",
+							"shortcut": "I/O"
+						},{
+							"offset": 17,
+							"size": 7,
+							"data": "Output value",
+							"shortcut": "OV"
+						}
+					]
+				}
+
+			]
+		}
+	]
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../static/Chart.js"></script>
+    <meta charset="UTF-8">
+    <title>Statistics</title>
+        <style>
+body {
+    font-family: "Lato", sans-serif;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 25px;
+    margin-left: 10px;
+    color: red
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close Menu &times;</a>
+  <a href="/">Main-Page</a>
+  <a href="/devices">Devices</a>
+  <a href="/logfile">Logfile</a>
+  <a href="/statistics">Statistics</a>
+</div>
+<span style="font-size:25px;cursor:pointer; color:green" onclick="openNav()">&#9776; Open Menu</span>
+    <pre>{{ content }}</pre>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+
+
+
+
+<div style="width: 600px">
+<canvas id="myChart"></canvas>
+</div>
+<script>
+var flaskdata = {{parameter|tojson}};
+var ctx = document.getElementById("myChart").getContext('2d');
+var label1 = "current hour";
+var label2 = flaskdata.currenthour-1
+if (label2 < 0)
+    label2 = 24 - label2;
+var label3 = flaskdata.currenthour-2
+if (label3 < 0)
+    label3 = 24 - label3;
+var label4 = flaskdata.currenthour-3
+if (label4 < 0)
+    label4 = 24 - label4;
+var label5 = flaskdata.currenthour-4
+if (label5 < 0)
+    label5 = 24 - label5;
+var label6 = flaskdata.currenthour-5
+if (label6 < 0)
+    label6 = 24 - label6;
+var label7 = flaskdata.currenthour-6
+if (label7 < 0)
+    label7 = 24 - label7;
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: [String(label7)+":00-"+String(label6)+":00", String(label6)+":00-"+String(label5)+":00", String(label5)+":00-"+String(label4)+":00", String(label4)+":00-"+String(label3)+":00", String(label3)+":00-"+String(label2)+":00" , label1],
+        datasets: [{
+            label: 'Received Enocean Messages last hours',
+            data: [flaskdata.eventcountercurrenthourminus5, flaskdata.eventcountercurrenthourminus4, flaskdata.eventcountercurrenthourminus3, flaskdata.eventcountercurrenthourminus2, flaskdata.eventcountercurrenthourminus1, flaskdata.eventcountercurrenthour],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        },      title: {
+        display: true,
+        text: 'Received Enocean Messages last hours'
+      }
+    }
+});
+
+
+</script>
+
+<div style="width: 600px">
+<canvas id="pieChart"></canvas>
+</div>
+<script>
+var flaskdata = {{parameter|tojson}};
+console.log(Object.keys(flaskdata)[0]);
+var labels = new Array();
+var data = new Array();
+for (var i = 0; i < Object.keys(flaskdata).length; i++)
+{
+    if (Object.keys(flaskdata)[i].includes("deviceid"))
+    {
+        labels.length = labels.length + 1;
+        data.length = data.length + 1;
+        labels[labels.length-1] = Object.keys(flaskdata)[i].replace("deviceid", "");
+        key =
+        data[data.length-1] = parseInt(flaskdata[Object.keys(flaskdata)[i]]);
+        console.log(data[data.length-1]);
+    }
+}
+new Chart(document.getElementById("pieChart"), {
+    type: 'pie',
+    data: {
+      labels: labels,
+      datasets: [{
+        label: "Received Enocean Messages (Device-IDs)",
+        backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850","#ffda33","#ff33ec","#33caff"],
+        data: data
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Received Enocean Messages (Device-IDs)'
+      }
+    }
+});
+</script>
+</body>
+</html>
