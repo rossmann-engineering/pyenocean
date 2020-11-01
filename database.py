@@ -41,7 +41,10 @@ def geteventcounterlasthour():
         sql = 'SELECT * FROM receive ORDER BY datetime DESC'
         cursor.execute(sql)
         for entry in cursor:
-            dt = datetime.datetime.strptime(entry[0], "%Y-%m-%d %H:%M:%S.%f")
+            try:
+                dt = datetime.datetime.strptime(entry[0], "%Y-%m-%d %H:%M:%S.%f")
+            except ValueError:          #We have to catch the ValueError because the millisecond part could be missing
+                dt = datetime.datetime.strptime(entry[0], "%Y-%m-%d %H:%M:%S")
             if (dt.hour == datetime.datetime.now().hour):
                 returnvalue = returnvalue + 1
             else:
@@ -56,7 +59,10 @@ def geteventcounter(hour):
         sql = 'SELECT * FROM receive ORDER BY datetime DESC'
         cursor.execute(sql)
         for entry in cursor:
-            dt = datetime.datetime.strptime(entry[0], "%Y-%m-%d %H:%M:%S.%f")
+            try:
+                dt = datetime.datetime.strptime(entry[0], "%Y-%m-%d %H:%M:%S.%f")
+            except ValueError:          #We have to catch the ValueError because the millisecond part could be missing
+                dt = datetime.datetime.strptime(entry[0], "%Y-%m-%d %H:%M:%S")
             if (dt.hour == hour):
                 returnvalue = returnvalue + 1
             if (dt.hour < hour):
