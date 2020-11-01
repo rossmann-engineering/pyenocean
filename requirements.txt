@@ -1,0 +1,4 @@
+Flask
+pyserial
+requests
+paho-mqtt
