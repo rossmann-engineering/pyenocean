@@ -2,11 +2,6 @@ from flask import Flask, flash, redirect, render_template, request, session, abo
 import os
 import json
 import time
-from tornado.wsgi import WSGIContainer
-from tornado.httpserver import HTTPServer
-from tornado.ioloop import IOLoop
-import tornado.web
-import tornado
 import config
 import datalogger
 import status
@@ -61,27 +56,11 @@ def statistics():
 
 
 def start():
-    app.secret_key = os.urandom(12)
-    sockets = tornado.netutil.bind_sockets(5000)
-    #tornado.process.fork_processes(0)
-    http_server = HTTPServer(WSGIContainer(app))
-    http_server.add_sockets(sockets)
-    app.debug = False
-    datalogger.logData('Thread Webserver started')
-
-    tornado.ioloop.PeriodicCallback(askstop, 1000).start()
-
-    tornado.ioloop.IOLoop.instance().start()
-
-
-
-    #http_server = WSGIServer(('0.0.0.0', 5000), app.wsgi_app)
-    #http_server.serve_forever()
+    app.run()
 
 
 stop = False
 def askstop():
     global stop
     if stop:
-        tornado.ioloop.IOLoop.instance().stop()
         datalogger.logData('Thread Webserver stopped')

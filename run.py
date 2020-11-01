@@ -21,7 +21,7 @@ enocean.read()
 
 def timerfunction():
     #Check the counter if the hour has changed
-    if (datetime.datetime.now().hour <> status.status.getInstance().datetimehourcounter):
+    if (datetime.datetime.now().hour != status.status.getInstance().datetimehourcounter):
         status.status.getInstance().hourcounter = 0
 
 
